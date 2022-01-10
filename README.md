@@ -1,8 +1,57 @@
-NNBA_project
+NBA_project
 ==============================
 
-A short description of the project.
 
+# NBA project (Data Science)
+
+In this project, I will try to predict scoreboard between team matches, 
+classification of players position based on some features I will get.
+Another thing I think will be interesting is predicting player overall
+on NBA 2k (video game), maybe based on their stats now.
+
+## Useful for setup
+
+creating your virtual environment
+
+```bash
+    python3 -m venve env
+```
+
+activate virtual environment
+
+```bash 
+    source env/bin/activate
+```
+
+
+now install ipykernel so you can add a new kernel on your Jupyter Notebook
+
+```bash 
+    pip install ipykernel
+```
+
+installing your virtual environment kernel
+
+```bash 
+    python3 -m ipykernel install --user --name=nba_env
+```
+
+deactivate your environment
+
+```bash 
+    deactivate
+```
+
+lists all packages and versions to txt
+
+```bash 
+    pip freeze -> requirements.txt
+```
+
+## Special thanks to
+
+- [Cookiecutter](https://github.com/drivendata/cookiecutter-data-science)
+- [Readmeso](https://readme.so)
 Project Organization
 ------------
 
