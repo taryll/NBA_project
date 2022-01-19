@@ -1,0 +1,3 @@
+https://en.wikipedia.org/wiki/Elo_rating_system
+https://fivethirtyeight.com/features/how-we-calculate-nba-elo-ratings/
+https://towardsdatascience.com/predicting-the-outcome-of-nba-games-with-machine-learning-a810bb768f20
