@@ -1,48 +1,72 @@
-NBA_project
-==============================
-
-
 # NBA project (Data Science)
 
-In this project, I will try to predict scoreboard between team matches, 
-classification of players position based on some features I will get.
-Another thing I think will be interesting is predicting player overall
-on NBA 2k (video game), maybe based on their stats now.
+This is my first end-to-end Data Science Project. I wanted to
+work with my interests, so I decided to choose NBA statistics
+as my project data input.
+
+In this project, I will try to predict the NBA match win 
+probability. Classify players' positions based on where they 
+shoot. Also, I used to play NBA 2K a lot, so it could be fun
+trying to predict players' overall ratings on the video 
+game based on their stats.
+
+## Steps
+
+**Data collection**: I found this amazing API called **nba_api** that
+collects data from 'nba.stats.com'. For the player overall rating
+data, I needed to web scrap from 'hoopshype.com' using **Beautiful Soup**
+(Python package), since the NBA 2K doesn't provide an API for it. 
+
+**Data processing**: In this step, we need to join our NBA player 
+stats with NBA 2K player overall rating. To prediction of the match score,
+I found a great article talking about **ELO Rating**, so I need to 
+create this feature (I will talk about it later). And finally to
+classify (or even to do **cluster analysis**) players' positions, 
+the method of **one-hot-encoding** will be used.
+
+**EDA**:
+
+**Model**:
+
+- NBA 2K player overall rating (**Regression**)
+- NBA match win probability (**Classification**)
+- NBA player positions (**Classification** or **Cluster Analysis**)
+
+**Deploy**: I will use **Heroku** as platform to deploy. 
 
 ## Useful for setup
 
-creating your virtual environment
+Creating your virtual environment.
 
 ```bash
     python3 -m venve env
 ```
 
-activate virtual environment
+Activate virtual environment.
 
 ```bash 
     source env/bin/activate
 ```
 
-
-now install ipykernel so you can add a new kernel on your Jupyter Notebook
+Now install ipykernel so you can add a new kernel on your Jupyter Notebook.
 
 ```bash 
     pip install ipykernel
 ```
 
-installing your virtual environment kernel
+Installing your virtual environment kernel.
 
 ```bash 
     python3 -m ipykernel install --user --name=nba_env
 ```
 
-deactivate your environment
+Deactivate your environment.
 
 ```bash 
     deactivate
 ```
 
-lists all packages and versions to txt
+List all packages and versions to txt.
 
 ```bash 
     pip freeze -> requirements.txt
@@ -52,6 +76,8 @@ lists all packages and versions to txt
 
 - [Cookiecutter](https://github.com/drivendata/cookiecutter-data-science)
 - [Readmeso](https://readme.so)
+- [nba_api](https://github.com/swar/nba_api)
+
 Project Organization
 ------------
 
